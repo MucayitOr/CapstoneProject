@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MadLevel5Task2</string>
+    <string name="action_delete_all">Delete All</string>
+
+    <!-- Labels -->
+    <string name="navigation_home">Game Backlog</string>
+    <string name="navigation_add_game">Add Game</string>
+
+    <!-- Add Income Fragment -->
+    <string name="title">Title</string>
+    <string name="discription">Discription</string>
+    <string name="amount">Amount</string>
+    <string name="day">Day</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="date">Day / Month / Year</string>
+    <string name="empty_field">Make sure non of the fields is empty!</string>
+    <string name="invalid_date">Please enter a valid date!</string>
+
+    <!-- Income Overview -->
+    <string name="income_amount">Amount:</string>
+    <string name="income_date">Date:</string>
+    <string name="income_add_button">Add income</string>
+</resources>
