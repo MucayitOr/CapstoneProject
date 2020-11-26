@@ -3,8 +3,8 @@
     <string name="action_delete_all">Delete All</string>
 
     <!-- Labels -->
-    <string name="navigation_home">Game Backlog</string>
-    <string name="navigation_add_game">Add Game</string>
+    <string name="navigation_home">Income Overview</string>
+    <string name="navigation_add_income">Add income</string>
 
     <!-- Add Income Fragment -->
     <string name="title">Title</string>

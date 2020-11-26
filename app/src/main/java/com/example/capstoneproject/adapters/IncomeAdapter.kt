@@ -1,4 +1,4 @@
-package com.example.capstoneproject
+package com.example.capstoneproject.adapters
 
 import android.os.Build
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
+import com.example.capstoneproject.R
 import com.example.capstoneproject.databinding.ItemIncomeBinding
 import com.example.capstoneproject.model.Income
 import java.time.format.DateTimeFormatter

@@ -1,4 +1,4 @@
-package com.example.capstoneproject
+package com.example.capstoneproject.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,25 +7,26 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
+import com.example.capstoneproject.R
 
 /**
- * A simple [Fragment] subclass as the default destination in the navigation.
+ * A simple [Fragment] subclass as the second destination in the navigation.
  */
-class IncomeOverviewFragment : Fragment() {
+class AddIncomeFragment : Fragment() {
 
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_income_overview, container, false)
+        return inflater.inflate(R.layout.fragment_add_income, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<Button>(R.id.button_first).setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+        view.findViewById<Button>(R.id.button_second).setOnClickListener {
+            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
         }
     }
 }

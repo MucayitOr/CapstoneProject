@@ -7,8 +7,8 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.capstoneproject.IncomeOverviewFragment"
-        android:label="@string/first_fragment_label"
+        android:name="com.example.capstoneproject.ui.IncomeOverviewFragment"
+        android:label="@string/navigation_home"
         tools:layout="@layout/fragment_income_overview">
 
         <action
@@ -17,8 +17,8 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.capstoneproject.AddIncomeFragment"
-        android:label="@string/second_fragment_label"
+        android:name="com.example.capstoneproject.ui.AddIncomeFragment"
+        android:label="@string/navigation_add_income"
         tools:layout="@layout/fragment_add_income">
 
         <action

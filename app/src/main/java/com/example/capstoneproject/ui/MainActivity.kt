@@ -1,13 +1,11 @@
-package com.example.capstoneproject
+package com.example.capstoneproject.ui
 
 import android.os.Bundle
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import androidx.activity.viewModels
-import androidx.lifecycle.ViewModel
+import com.example.capstoneproject.R
 import com.example.capstoneproject.viewmodels.IncomeViewModel
 
 class MainActivity : AppCompatActivity() {
