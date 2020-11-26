@@ -13,8 +13,6 @@ import com.example.capstoneproject.adapters.IncomeAdapter
 import com.example.capstoneproject.databinding.FragmentIncomeOverviewBinding
 import com.example.capstoneproject.model.Income
 import com.example.capstoneproject.viewmodels.IncomeViewModel
-import com.example.madlevel5task2.databinding.FragmentGameBacklogBinding
-import com.example.madlevel5task2.model.Game
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
