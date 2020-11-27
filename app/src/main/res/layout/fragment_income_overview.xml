@@ -21,15 +21,14 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:listitem="@layout/item_income" />
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabAddIncome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:clickable="true"
         android:layout_gravity="bottom|right"
-        android:text="@string/income_add_button"
-        app:icon="@android:drawable/ic_input_add"
+        android:src="@android:drawable/ic_input_add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:rippleColor="#FFFFFF"

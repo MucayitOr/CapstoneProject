@@ -43,15 +43,15 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="@string/amount"
-                android:inputType="date|textPersonName" />
+                android:inputType="numberDecimal" />
 
             <EditText
-                android:id="@+id/etPlatform"
+                android:id="@+id/etDescription"
                 style="@android:style/Widget.Material.EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="@string/discription"
+                android:hint="@string/description"
                 android:inputType="date|textPersonName" />
 
 

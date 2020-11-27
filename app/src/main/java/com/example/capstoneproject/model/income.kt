@@ -10,11 +10,11 @@ data class Income(
     @ColumnInfo(name = "title")
     var title: String,
 
-    @ColumnInfo(name = "discription")
-    var discription: String,
+    @ColumnInfo(name = "description")
+    var description: String,
 
     @ColumnInfo(name = "amount")
-    var amount: Double,
+    var amount: String,
 
     @ColumnInfo(name = "date")
     var date: LocalDate,

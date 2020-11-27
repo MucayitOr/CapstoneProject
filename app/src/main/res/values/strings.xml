@@ -8,7 +8,7 @@
 
     <!-- Add Income Fragment -->
     <string name="title">Title</string>
-    <string name="discription">Discription</string>
+    <string name="description">Discription</string>
     <string name="amount">Amount</string>
     <string name="day">Day</string>
     <string name="month">Month</string>
@@ -18,7 +18,7 @@
     <string name="invalid_date">Please enter a valid date!</string>
 
     <!-- Income Overview -->
-    <string name="income_amount">Amount:</string>
+    <string name="income_amount">Amount: €</string>
     <string name="income_date">Date:</string>
     <string name="income_add_button">Add income</string>
 </resources>

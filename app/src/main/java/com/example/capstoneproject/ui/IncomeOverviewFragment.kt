@@ -48,7 +48,7 @@ class IncomeOverviewFragment : Fragment() {
 
         initRv()
 
-        observeAddGameResult()
+        observeAddIncomeResult()
     }
 
     private fun initRv() {
@@ -59,7 +59,7 @@ class IncomeOverviewFragment : Fragment() {
         createItemTouchHelper().attachToRecyclerView(binding.rvIncomes)
     }
 
-    private fun observeAddGameResult() {
+    private fun observeAddIncomeResult() {
         viewModel.incomes.observe(viewLifecycleOwner, { incomes ->
             this.incomes.clear()
             this.incomes.addAll(incomes)

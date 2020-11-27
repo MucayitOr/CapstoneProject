@@ -21,8 +21,8 @@ class IncomeAdapter(private val incomes: List<Income>):
         fun dataBind(income: Income){
             binding.tvDate.text = income.date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM))
             binding.tvTitle.text = income.title
-            binding.tvDiscription.text = income.discription
-            binding.tvAmount.text = income.amount.toString()
+            binding.tvDescription.text = income.description
+            binding.tvNumber.text = income.amount.toString()
         }
     }
 
