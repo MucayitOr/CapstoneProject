@@ -5,8 +5,8 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.time.LocalDate
 
-@Entity(tableName = "outcomeTable")
-data class Outcome(
+@Entity(tableName = "expensesTable")
+data class Expense(
         @ColumnInfo(name = "title")
         var title: String,
 

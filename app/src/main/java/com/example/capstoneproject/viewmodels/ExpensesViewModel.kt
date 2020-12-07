@@ -3,33 +3,34 @@ package com.example.capstoneproject.viewmodels
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
+import com.example.capstoneproject.model.Expense
 import com.example.capstoneproject.model.Income
 import com.example.capstoneproject.repository.IncomeAndExpensesRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class IncomeViewModel(application: Application) : AndroidViewModel(application) {
+class ExpensesViewModel(application: Application) : AndroidViewModel(application) {
     private val ioScope = CoroutineScope(Dispatchers.IO)
-    private val incomeRepository = IncomeAndExpensesRepository(application.applicationContext)
+    private val Repository = IncomeAndExpensesRepository(application.applicationContext)
 
-    val incomes: LiveData<List<Income>> = incomeRepository.getAllIncomes()
+    val expenses: LiveData<List<Expense>> = Repository.getAllExpenses()
 
-    fun insertIncome(income: Income) {
+    fun insertExpense(expense: Expense) {
         ioScope.launch {
-            incomeRepository.insertIncome(income)
+            Repository.insertExpense(expense)
         }
     }
 
-    fun deleteIncome(income: Income) {
+    fun deleteExpense(expense: Expense) {
         ioScope.launch {
-            incomeRepository.deleteIncome(income)
+            Repository.deleteExpense(expense)
         }
     }
 
-    fun deleteAllIncomes(){
+    fun deleteAllExpenses(){
         ioScope.launch {
-            incomeRepository.deleteAllIncomes()
+            Repository.deleteAllExpenses()
         }
     }
 }
