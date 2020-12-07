@@ -6,7 +6,7 @@ import com.example.capstoneproject.model.Income
 
 @Dao
 interface IncomeDao {
-    @Query("SELECT * FROM incomeTable")
+    @Query("SELECT * FROM incomeTable ORDER BY date")
     fun getAllIncomes(): LiveData<List<Income>>
 
     @Insert
