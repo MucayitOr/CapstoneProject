@@ -28,7 +28,7 @@ class ExpensesOverviewFragment : Fragment() {
 
     private val expenses = arrayListOf<Expense>()
     private val expensesAdapter = ExpensesAdapter(expenses)
-    
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

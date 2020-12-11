@@ -21,4 +21,10 @@
     <string name="income_amount">Amount: €</string>
     <string name="income_date">Date:</string>
     <string name="income_add_button">Add income</string>
+
+    <!-- bottom navigation -->
+    <string name="income_nav">Incomes</string>
+    <string name="expense_nav">Expenses</string>
+    <string name="home_nav">Home</string>
+    home_nav
 </resources>

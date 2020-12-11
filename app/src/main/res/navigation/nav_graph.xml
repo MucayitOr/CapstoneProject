@@ -25,4 +25,22 @@
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/addExpensesFragment"
+        android:name="com.example.capstoneproject.ui.AddExpensesFragment"
+        android:label="fragment_add_expenses"
+        tools:layout="@layout/fragment_add_expenses" >
+        <action
+            android:id="@+id/action_addExpensesFragment_to_expensesOverviewFragment"
+            app:destination="@id/expensesOverviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/expensesOverviewFragment"
+        android:name="com.example.capstoneproject.ui.ExpensesOverviewFragment"
+        android:label="fragment_expenses_overview"
+        tools:layout="@layout/fragment_expenses_overview" >
+        <action
+            android:id="@+id/action_expensesOverviewFragment_to_addExpensesFragment"
+            app:destination="@id/addExpensesFragment" />
+    </fragment>
 </navigation>
