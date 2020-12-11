@@ -11,11 +11,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.capstoneproject.R
 import com.example.capstoneproject.adapters.ExpensesAdapter
 import com.example.capstoneproject.databinding.FragmentExpensesOverviewBinding
-import com.example.capstoneproject.databinding.FragmentIncomeOverviewBinding
 import com.example.capstoneproject.model.Expense
-import com.example.capstoneproject.model.Income
 import com.example.capstoneproject.viewmodels.ExpensesViewModel
-import com.example.capstoneproject.viewmodels.IncomeViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -25,12 +22,13 @@ import kotlinx.coroutines.withContext
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
 class ExpensesOverviewFragment : Fragment() {
-    private lateinit var binding: ExpensesOverviewFragment
+    private lateinit var binding: FragmentExpensesOverviewBinding
 
     private val viewModel: ExpensesViewModel by viewModels()
 
     private val expenses = arrayListOf<Expense>()
     private val expensesAdapter = ExpensesAdapter(expenses)
+    
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -57,9 +55,9 @@ class ExpensesOverviewFragment : Fragment() {
     private fun initRv() {
         binding.rvExpenses.layoutManager =
             LinearLayoutManager(context, RecyclerView.VERTICAL, false)
-        binding.rvIncomes.adapter = expensesAdapter
+        binding.rvExpenses.adapter = expensesAdapter
 
-        createItemTouchHelper().attachToRecyclerView(binding.rvIncomes)
+        createItemTouchHelper().attachToRecyclerView(binding.rvExpenses)
     }
 
     private fun observeAddIncomeResult() {
@@ -85,7 +83,7 @@ class ExpensesOverviewFragment : Fragment() {
 
                 CoroutineScope(Dispatchers.Main).launch {
                     withContext(Dispatchers.IO) {
-                        viewModel.deleteIncome(expenses[position])
+                        viewModel.deleteExpense(expenses[position])
                     }
                 }
             }
